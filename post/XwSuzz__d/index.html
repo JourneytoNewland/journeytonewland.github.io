@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>前端脚手架 - 模板市场 | 蝴蝶之吻</title>
+<meta name="description" content="曾因酒醉鞭名马，生怕情多慢美人。">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://journeytonewland.github.io/favicon.ico?v=1557829103278">
+<link rel="stylesheet" href="https://journeytonewland.github.io/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://journeytonewland.github.io">
+        <img src="https://journeytonewland.github.io/images/avatar.png?v=1557829103278" class="site-logo">
+        <h1 class="site-title">蝴蝶之吻</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      曾因酒醉鞭名马，生怕情多慢美人。
+    </div>
+    <div class="site-footer">
+      Powered by Gridea
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">前端脚手架 - 模板市场</h2>
+            <div class="post-date">2019-05-14</div>
+            
+            <div class="post-content">
+              <blockquote>
+<p>以下来源于阿里的前端开发脚手架 - <code>飞冰</code>部分实例。链接为在线预览版本。实际装了飞冰（真正做项目，有点臃肿，但做参考问题不大），这些前端功能的基本功能，都可以通过引用模板，一键初始化（跟分享的链接里的功能表现一致）。剩下的补丁与更深层的发挥，原则上才是现有的“程序员”更多精力所花费的地方。当然，如果你能产生（创造）出优秀的模板供自己或他人复用，那就更好（牛<code>*</code>）了。</p>
+</blockquote>
+<blockquote>
+<p>怎么偷或者更好地偷，还是要自己花点时间与夯实基础技术的。</p>
+</blockquote>
+<ul>
+<li><a href="https://unpkg.com/@icedesign/monitor-dashboard@1.0.5/build/index.html#/dashboard">数据监控系统</a></li>
+<li><a href="https://unpkg.com/@icedesign/builder-platfrom-scaffold@2.0.1/build/index.html#/dashboard">云平台构建</a></li>
+<li><a href="https://unpkg.com/@icedesign/asset-management-scaffold@2.0.5/build/index.html#/manage/company">资产管理</a></li>
+<li><a href="https://unpkg.com/@icedesign/task-management-admin-scaffold@2.0.1/build/index.html">任务管理</a></li>
+<li><a href="https://unpkg.com/@icedesign/algorithm-model-admin-scaffold@2.0.1/build/index.html">算法模型管理</a></li>
+<li><a href="https://unpkg.com/@icedesign/usertrack-admin-scaffold@2.0.2/build/index.html">应用监控</a></li>
+<li><a href="https://unpkg.com/@icedesign/customer-analysis-admin-scaffold@2.0.1/build/index.html#/analysis">客源分析系统</a></li>
+<li><a href="https://unpkg.com/@icedesign/analysis-scaffold@2.0.2/build/index.html#/dashboard">电商类数据大盘</a></li>
+<li><a href="https://unpkg.com/@icedesign/finance-dashboard@2.0.2/build/index.html#/dashboard">金融类数据大盘</a></li>
+<li><a href="https://unpkg.com/@icedesign/dashboard-scaffold@2.0.2/build/index.html">销售类数据大盘</a></li>
+<li><a href="https://unpkg.com/@icedesign/ecommerce-scaffold@2.0.3/build/index.html">电商管理系统</a></li>
+<li><a href="https://unpkg.com/@icedesign/contract-management-scaffold@2.0.1/build/index.html">合同管理系统</a></li>
+<li><a href="https://unpkg.com/@icedesign/project-management-admin@2.0.2/build/index.html">项目管理系统</a></li>
+<li><a href="https://unpkg.com/@icedesign/application-management-admin-scaffold@2.0.2/build/index.html">应用管理系统</a></li>
+<li><a href="https://unpkg.com/@icedesign/commodity-management-scaffold@2.0.3/build/index.html">商家管理系统</a></li>
+<li><a href="https://unpkg.com/@icedesign/cms-scaffold@2.0.3/build/index.html">CMS 内容管理系统</a></li>
+<li><a href="https://unpkg.com/@icedesign/creator-admin-scaffold@2.0.1/build/index.html">创作平台</a></li>
+<li><a href="https://unpkg.com/@icedesign/schools-scaffold@2.0.1/build/index.html">学校管理系统</a></li>
+<li><a href="https://unpkg.com/@icedesign/pro-scaffold@2.0.13/build/index.html">ICE 设计系统</a></li>
+<li><a href="https://unpkg.com/@icedesign/order-management-scaffold@2.0.7/build/index.html#/dashboard">订单管理系统</a></li>
+<li><a href="https://unpkg.com/@icedesign/voice-chat-admin-scaffold@latest/build/index.html">语音对话系统</a></li>
+<li><a href="https://ice.d2admin.fairyever.com">ICE D2 ADMIN</a></li>
+<li><a href="https://alibaba.github.io/ice/scaffold-preview/ngx-admin/">ngx admin</a></li>
+<li><a href="https://g.alicdn.com/bizcharts-material/scaffold-cira-crowd/0.0.6/index.html#/">人群画像分析</a></li>
+<li><a href="https://g.alicdn.com/bizcharts-material/2016-olympic-nbc/0.0.6/index.html#/">电视广告表现可视化</a></li>
+<li><a href="https://g.alicdn.com/bizcharts-material/scaffold-monitor-linecharts/0.0.2/index.html#/">监控预警大屏-拆线图</a></li>
+<li><a href="https://g.alicdn.com/bizcharts-material/scaffold-ad/0.0.5/index.html#/">广告数据首页</a></li>
+<li><a href="https://g.alicdn.com/bizcharts-material/scaffold-screen-demo/0.0.6/index.html#/">可视化大屏</a></li>
+</ul>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://journeytonewland.github.io/tag/yi-ge-xiang-fa-bu-yi-ding-dui" class="tag">
+                    一个想法不一定对
+                  </a>
+                
+                  <a href="https://journeytonewland.github.io/tag/99aRzuYZT" class="tag">
+                    信息源
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://journeytonewland.github.io/post/o9i34JI4X">
+                  <h3 class="post-title">
+                    傲慢与偏见 - 名望
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>
